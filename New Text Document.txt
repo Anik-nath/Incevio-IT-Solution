@@ -1,0 +1,32 @@
+Dear Applicant,
+
+We appreciate your interest in the position you've applied for, and we've reviewed your CV. To proceed with the recruitment process, we would like to invite you to take a test. Successful candidates in this test will receive an invitation for an interview meeting with us,
+
+Task 1: Find the Figma design and convert it to HTML using CSS and JS. 
+
+Instructions:
+- You can use Tailwind CSS and jQuery If needed.
+- Use CSS variables for repeated styles.
+- The code must have to be developer friendly.
+- Fully responsive with as many breaking points as possible.
+- For images and background assets you can use your choice of images that fit well.
+- Feel free to make any changes that increase the quality of the final work.
+
+Figma: https://www.figma.com/file/P6VatKnhgE2vIIwZ4HCC7z/Essence-Theme-(Copy)?type=design&node-id=241%3A287&mode=design&t=XNX8n7OHpwVhHt7B-1
+
+Task 2: See the link below and find the issues on this page.
+
+- List all your findings related to styling issues, markup issues, and UI/UX issues
+- Suggest something that can improve the UI/UX
+
+Link: https://zcart.incevio.cloud/
+
+Please submit your completed task before Sunday (25th April 2024)
+
+Note: We want to assure you that any design you submit will not be used by us if you're not hired.
+
+Feel free to contact us if you have any questions about the test work. Thank you for your interest in Incevio, and we look forward to reviewing your task.
+
+
+Thanks and Regards
+HR, Incevio
