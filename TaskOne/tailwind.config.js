@@ -55,6 +55,7 @@ export default {
         'h3': '32px',
         'h4': '24px',
         'h5': '20px',
+        'cardTitle':'27px',
         'p1': '18px',
         'p2': '16px',
         'p3': '14px',
