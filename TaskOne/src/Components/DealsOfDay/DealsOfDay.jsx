@@ -119,10 +119,10 @@ const DealsOfDay = () => {
         </div>
         {/*  */}
         <div>
-            <img className="w-full" src={deals3} alt="" />
+          <img className="w-full" src={deals3} alt="" />
         </div>
         <div>
-            <img className="w-full" src={deals4} alt="" />
+          <img className="w-full" src={deals4} alt="" />
         </div>
       </div>
     </div>
