@@ -4,7 +4,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Interface Colors
         interface: {
           '010E0E': '#010E0E',
           '1A2626': '#1A2626',
