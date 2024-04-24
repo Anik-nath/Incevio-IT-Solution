@@ -103,14 +103,14 @@ const MostViewItem = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
     ],
   };
   return (
-    <div className="px-side-padding pb-6">
+    <div className="md:px-side-padding px-12 pb-6">
       <div className="flex flex-row justify-between">
         <h4 className="text-h4 font-medium">Most Viewed Items</h4>
         <div>See more items</div>

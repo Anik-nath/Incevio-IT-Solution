@@ -16,12 +16,12 @@ const Apple = () => {
   ];
 
   return (
-    <div className="px-side-padding pb-6">
+    <div className="md:px-side-padding px-12 pb-6">
       <div className="flex flex-row justify-between">
         <h4 className="text-h4 font-medium">Apple</h4>
         <div>See more items</div>
       </div>
-      <div id="card-container" className="grid md:grid-cols-6 gap-3 py-4">
+      <div id="card-container" className="grid md:grid-cols-6 grid-cols-3 gap-3 py-4">
         {apples.map((apple, index) => (
           <div className="text-center" key={index}>
             <div className="bg-neutral-50">

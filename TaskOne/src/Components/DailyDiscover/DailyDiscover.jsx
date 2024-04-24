@@ -114,12 +114,12 @@ const DailyDiscover = () => {
   ];
 
   return (
-    <div className="px-side-padding pb-6">
+    <div className="md:px-side-padding px-12 md:pb-6">
       <div className="flex flex-row justify-between">
         <h4 className="text-h4 font-medium">Daily Discover</h4>
         <div>See more items</div>
       </div>
-      <div id="card-container" className="grid md:grid-cols-6 gap-3 py-4">
+      <div id="card-container" className="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 md:gap-3 gap-2 py-4">
         {DailyDiscover.map((item) => (
           <ProductCard  key={item.id} item={item}></ProductCard>
         ))}

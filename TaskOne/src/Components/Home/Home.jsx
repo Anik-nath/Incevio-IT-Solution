@@ -15,7 +15,7 @@ const Home = () => {
     return (
         <div>
             <FrontView></FrontView>
-            <ShopByDepartment></ShopByDepartment>
+            <ShopByDepartment></ShopByDepartment> 
             <DealsOfDay></DealsOfDay>
             <Accesories></Accesories>
             <OnSelling></OnSelling>

@@ -77,11 +77,11 @@ const WeeklyVendors = () => {
     },
   ];
   return (
-    <div className="px-side-padding pb-6">
+    <div className="md:px-side-padding px-12 pb-6">
       <div className="text-left">
         <h4 className="text-h4 font-medium">Weekly Top Vendors</h4>
       </div>
-      <div id="card-container" className="grid md:grid-cols-5 gap-3 py-4">
+      <div id="card-container" className="grid md:grid-cols-5 grid-cols-2 gap-3 py-4">
         {
             vendorsProduct.map(item => 
         

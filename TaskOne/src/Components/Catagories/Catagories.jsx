@@ -79,11 +79,11 @@ const Catagories = () => {
     },
   ];
   return (
-    <div className="px-side-padding pb-6">
+    <div className="md:px-side-padding px-12 pb-6">
       <div>
         <h4 className="text-h4 font-medium capitalize">Shop by catagories</h4>
       </div>
-      <div className="grid grid-cols-5 gap-4 py-4">
+      <div className="grid md:grid-cols-5 grid-cols-3 gap-4 py-4">
         {catagories.map((item) => (
           <div
             key={item.catagoryImg}
@@ -92,7 +92,7 @@ const Catagories = () => {
             <div className="w-full">
               <img src={item.catagoryImg} alt="" />
             </div>
-            <div className="w-full text-center font-bold">Portrait</div>
+            <div className="w-full text-center md:font-bold">Portrait</div>
           </div>
         ))}
       </div>

@@ -7,8 +7,8 @@ import offer6 from "../../assets/Offer/image 62.png";
 
 const Offers = () => {
     return (
-        <div className="px-side-padding pb-24">
-        <div className="grid grid-cols-3 gap-4">
+        <div className="md:px-side-padding px-12 md:pb-24">
+        <div className="grid md:grid-cols-3 grid-cols-2 gap-4">
             <div>
                 <img src={offer1} alt="offer1" />
             </div>

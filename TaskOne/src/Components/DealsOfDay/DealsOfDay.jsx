@@ -8,7 +8,7 @@ import ReactStars from "react-rating-stars-component";
 
 const DealsOfDay = () => {
   return (
-    <div className="px-side-padding pb-6">
+    <div className="md:px-side-padding px-12 pb-6">
       <div className="flex flex-row justify-between">
         <h4 className="text-h4 font-medium capitalize">Deals Of Day</h4>
         <div>See more items</div>
@@ -19,7 +19,7 @@ const DealsOfDay = () => {
             <img className="w-full" src={deals1} alt="" />
           </div>
           <div className="w-full flex flex-col justify-between items-start">
-            <h1 className="font-bold text-justify">
+            <h1 className="font-bold md:text-justify">
               Wireless Bluetooth Headset Single Ear Earplugs Ultra...
             </h1>
             <div className="flex items-center flex-row">
@@ -71,7 +71,7 @@ const DealsOfDay = () => {
             <img className="w-full" src={deals2} alt="" />
           </div>
           <div className="w-full flex flex-col justify-between items-start">
-            <h1 className="font-bold text-justify">
+            <h1 className="font-bold md:text-justify">
               Wireless Bluetooth Headset Single Ear Earplugs Ultra...
             </h1>
             <div className="flex items-center flex-row">

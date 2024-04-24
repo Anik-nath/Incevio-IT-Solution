@@ -27,11 +27,11 @@ const ShopByDepartment = () => {
         {title:'Portrait',image: dept12},
     ]
     return (
-        <div className="px-side-padding pb-6">
+        <div className="md:px-side-padding px-12 pb-6">
             <div>
                 <h4 className="text-h4 font-medium">Shop By Department</h4>
             </div>
-            <div className="grid grid-cols-6 gap-6 py-4">
+            <div className="grid md:grid-cols-6 grid-cols-3 gap-6 py-4">
                {
                 departments.map(item => 
                 <div key={item.image} className="flex flex-col justify-center items-center">

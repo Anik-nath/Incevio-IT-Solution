@@ -84,13 +84,13 @@ const Accesories = () => {
     },
   ];
   return (
-    <div className="px-side-padding pb-6">
+    <div className="md:px-side-padding px-12 pb-6">
       <div>
         <h4 className="text-h4 font-medium">On Selling Accesories</h4>
       </div>
-      <div className="grid grid-cols-3 gap-4 py-4">
+      <div className="grid md:grid-cols-3 grid-cols-2 gap-4 py-4">
         {Accesories.map((item) => (
-          <div key={item.id} className="grid grid-cols-3 bg-white">
+          <div key={item.id} className="grid md:grid-cols-3 grid-cols-1 bg-white">
             <div className="div">
               <img className="w-full" src={item.image} alt="accesories1" />
             </div>

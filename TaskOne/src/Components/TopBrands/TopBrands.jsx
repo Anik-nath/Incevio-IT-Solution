@@ -19,7 +19,7 @@ const TopBrands = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 3,
           infinite: true,
           dots: true,
@@ -28,7 +28,7 @@ const TopBrands = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
           slidesToScroll: 2,
           initialSlide: 2,
         },
@@ -36,14 +36,14 @@ const TopBrands = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
     ],
   };
   return (
-    <div className="px-side-padding pb-6">
+    <div className="md:px-side-padding px-12 pb-6">
       <div>
         <h4 className="text-h4 font-medium">Top Brands</h4>
       </div>

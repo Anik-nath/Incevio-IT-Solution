@@ -1,4 +1,4 @@
-import staricon from "../../assets/frontview/Frame 40.png";
+// import staricon from "../../assets/frontview/Frame 40.png";
 import award from "../../assets/frontview/award.png";
 import banner from "../../assets/frontview/Frame 27046.png";
 import offer from "../../assets/frontview/Frame 68.png";
@@ -77,7 +77,7 @@ const FrontView = () => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 4,
           slidesToScroll: 2,
           initialSlide: 2,
         },
@@ -85,32 +85,34 @@ const FrontView = () => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
     ],
   };
   return (
-    <div className="px-side-padding pb-20 mt-8">
-      <div className="grid grid-cols-4 gap-4 pb-4">
+    <div className="md:px-side-padding px-12 pb-20 mt-8">
+      <div className="grid md:grid-cols-4 grid-cols-1 gap-4 pb-4">
         <div className="bg-white p-4">
           <div className="flex flex-row gap-2 mb-3">
             <img src={award} alt="" />
             <p className="text-primary-194E8A font-bold">All Catagories</p>
           </div>
           {catagoryname.map((item) => (
-            <div key={item.name} className="flex flex-row gap-2 mb-3">
-              <img src={item.image} alt="" />
-              <p>{item.name}</p>
+            <div key={item.name} className="grid md:grid-cols-1 gap-2 mb-3">
+              <div className="flex flex-row gap-2">
+                <img src={item.image} alt="" />
+                <p>{item.name}</p>
+              </div>
             </div>
           ))}
         </div>
-        <div className="col-span-2 flex flex-col gap-4">
+        <div className="md:col-span-2 flex flex-col gap-4">
           <div className="relative">
             <img src={banner} alt="banner" />
-            <div className="absolute bottom-14 w-4/12 h-auto p-6">
-              <h1 className="text-5xl pb-4 font-bold text-primary-194E8A">
+            <div className="absolute bottom-14 md:w-4/12 h-auto p-6">
+              <h1 className="md:text-5xl pb-4 font-bold text-primary-194E8A">
                 Kitchen Savings.
               </h1>
               <button className="bg-primary-194E8A text-white px-4 py-2">
@@ -194,9 +196,9 @@ const FrontView = () => {
           </div>
         </div>
         <div className="p-4 bg-white flex justify-between flex-col">
-          <h6 className="capitalize">Good Afternoon, john Smith</h6>
+          <h6 className="capitalize text-center md:text-left">Good Afternoon, john Smith</h6>
           <div className="flex flex-col items-center justify-cente">
-            <h3 className="font-semibold">Flash Sale for you!</h3>
+            <h3 className="font-semibold mt-2 md:mt-0">Flash Sale for you!</h3>
             <p>
               <span className="text-5xl font-bold text-primary-194E8A ">
                 40
@@ -204,7 +206,7 @@ const FrontView = () => {
               %off
             </p>
           </div>
-          <p className="">
+          <p className="md:text-left text-center mb-4 md:mb-0">
             After 12hr this offer will be end.{" "}
             <a href="#" className="text-primary-194E8A font-semibold">
               Get Now
@@ -218,7 +220,7 @@ const FrontView = () => {
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-4 gap-4">
+      {/* <div className="grid md:grid-cols-4 grid-cols-2 gap-4">
         <div className="bg-neutral-50 p-4 flex flex-row items-center gap-2">
           <div>
             <img src={staricon} alt="" />
@@ -255,7 +257,7 @@ const FrontView = () => {
             <p>Discover whats new & excitings</p>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
