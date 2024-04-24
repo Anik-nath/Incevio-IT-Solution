@@ -4,16 +4,35 @@ import { FiUser } from "react-icons/fi";
 import { BiCart } from "react-icons/bi";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
+import { useEffect, useState } from "react";
 
 const Navigations = () => {
+  const [showSection, setShowSection] = useState(true);
+
+  useEffect(() => {
+    const setInitialShowSection = () => {
+      setShowSection(window.innerWidth >= 768); // Set initial state based on viewport width
+    };
+
+    setInitialShowSection();
+
+    window.addEventListener('resize', setInitialShowSection);
+
+    return () => {
+      window.removeEventListener('resize', setInitialShowSection);
+    };
+  }, []);
+  const toggleSection = () => {
+    setShowSection(!showSection);
+  };
   return (
     <div>
       <section className="md:px-side-padding px-12">
-        <div className="flex justify-between items-center py-4 text-primary-194E8A font-bold gap-8 md:gap-0">
+        <div className="flex justify-between items-center py-2 md:py-4 text-primary-194E8A font-bold gap-8 md:gap-0">
           <div>
             <IoIosArrowBack />
           </div>
-          <p className="md:text-p3 text-sm">
+          <p className="md:text-p3 text-p6">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore !
           </p>
@@ -26,7 +45,7 @@ const Navigations = () => {
         <div className="flex items-center text-white">
           <img className="md:w-full w-3/4" src={logo} alt="" />
         </div>
-        <div className="w-5/12 flex items-center lg:w-auto">
+        <div className="w-5/12 flex items-center">
           <div className="relative">
             <input
               type="text"
@@ -53,11 +72,14 @@ const Navigations = () => {
               <BiCart />
             </div>
           </div>
+          <div className="cursor-pointer" onClick={toggleSection}><p className="text-sm text-white border px-2 rounded-full lg:hidden">Events</p></div>
         </div>
       </nav>
+      {
+        showSection && (
       <section className="bg-white py-4">
         <div className="md:px-side-padding px-12">
-          <div className="md:flex justify-between items-center  text-primary-194E8A gap-1 md:gap-4 font-semibold grid grid-cols-8">
+          <div className="md:flex justify-between items-center  text-primary-194E8A gap-1 md:gap-4 font-semibold grid grid-cols-8 text-p6 md:text-p4">
             <div>Brands</div>
             <div>Brands</div>
             <div>Vendors</div>
@@ -77,6 +99,8 @@ const Navigations = () => {
           </div>
         </div>
       </section>
+      )
+    }
     </div>
   );
 };

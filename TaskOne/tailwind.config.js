@@ -60,6 +60,7 @@ export default {
         'p3': '14px',
         'p4': '13px',
         'p5': '12px',
+        'p6': '10px',
       },
       fontWeight: {
         'normal': 400,

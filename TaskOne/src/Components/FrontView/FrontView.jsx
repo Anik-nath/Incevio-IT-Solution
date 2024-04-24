@@ -10,6 +10,7 @@ import brand4 from "../../assets/frontview/Frame 26928-1.png";
 import brand5 from "../../assets/frontview/Frame 26928-2.png";
 import brand6 from "../../assets/frontview/Frame 26928-3.png";
 import brand7 from "../../assets/Brands/Anarosh.png";
+import { useEffect, useState } from "react";
 const FrontView = () => {
   const catagoryname = [
     {
@@ -91,22 +92,45 @@ const FrontView = () => {
       },
     ],
   };
+  const [showAllCategories, setShowAllCategories] = useState(true);
+
+  useEffect(() => {
+    const setInitialShowAllCategories = () => {
+      setShowAllCategories(window.innerWidth >= 768); // Adjust this breakpoint as needed
+    };
+
+    setInitialShowAllCategories();
+
+    window.addEventListener('resize', setInitialShowAllCategories);
+
+    return () => {
+      window.removeEventListener('resize', setInitialShowAllCategories);
+    };
+  }, []);
+
+  const toggleShowAllCategories = () => {
+    if (window.innerWidth < 768) { // Adjust this breakpoint as needed
+      setShowAllCategories(!showAllCategories);
+    }
+  };
+
   return (
     <div className="md:px-side-padding px-12 pb-20 mt-8">
       <div className="grid md:grid-cols-4 grid-cols-1 gap-4 pb-4">
         <div className="bg-white p-4">
-          <div className="flex flex-row gap-2 mb-3">
-            <img src={award} alt="" />
-            <p className="text-primary-194E8A font-bold">All Catagories</p>
-          </div>
-          {catagoryname.map((item) => (
-            <div key={item.name} className="grid md:grid-cols-1 gap-2 mb-3">
-              <div className="flex flex-row gap-2">
-                <img src={item.image} alt="" />
-                <p >{item.name}</p>
-              </div>
+        <div className="flex flex-row gap-2 mb-3 cursor-pointer" onClick={toggleShowAllCategories}>
+        <img src={award} alt="" />
+        <p className="text-primary-194E8A font-bold">All Categories</p>
+      </div>
+      {showAllCategories &&
+        catagoryname.map((item) => (
+          <div key={item.name} className="grid md:grid-cols-1 gap-2 mb-3">
+            <div className="flex flex-row gap-2">
+              <img src={item.image} alt="" />
+              <p>{item.name}</p>
             </div>
-          ))}
+          </div>
+        ))}
         </div>
         <div className="md:col-span-2 flex flex-col gap-4">
           <div className="relative">
@@ -221,38 +245,38 @@ const FrontView = () => {
         </div>
       </div>
       <div className="grid md:grid-cols-4 grid-cols-2 gap-4">
-        <div className="bg-neutral-50 p-4 flex flex-row items-center gap-2">
+        <div className="bg-neutral-50 p-4 flex flex-col md:flex-row items-center gap-2">
           <div>
             <img src={staricon} alt="" />
           </div>
-          <div className="flex flex-col">
-            <p className="font-bold">Quick & Easy Store Pickup</p>
-            <p>Get your order as little as 1hr</p>
+          <div className="flex flex-col md:text-md text-sm text-center md:text-left">
+            <p className="font-bold md:text-md text-sm">Quick & Easy Store Pickup</p>
+            <p className="md:text-md text-sm">Get your order as little as 1hr</p>
           </div>
         </div>
-        <div className="bg-neutral-50 p-4 flex flex-row items-center gap-2">
+        <div className="bg-neutral-50 p-4 flex flex-col md:flex-row items-center gap-2">
           <div>
             <img src={staricon} alt="" />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col md:text-md text-sm text-center md:text-left">
             <p className="font-bold">Low Price Guarantee</p>
             <p>We won’t be beat on price </p>
           </div>
         </div>
-        <div className="bg-neutral-50 p-4 flex flex-row items-center gap-2">
+        <div className="bg-neutral-50 p-4 flex flex-col md:flex-row items-center gap-2">
           <div>
             <img src={staricon} alt="" />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col md:text-md text-sm text-center md:text-left">
             <p className="font-bold">Knowledgeable Advice</p>
             <p>Answer to your tech questions</p>
           </div>
         </div>
-        <div className="bg-neutral-50 p-4 flex flex-row items-center gap-2">
+        <div className="bg-neutral-50 p-4 flex flex-col md:flex-row items-center gap-2">
           <div>
             <img src={staricon} alt="" />
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col md:text-md text-sm text-center md:text-left">
             <p className="font-bold">Lates & Greatest Tech</p>
             <p>Discover whats new & excitings</p>
           </div>

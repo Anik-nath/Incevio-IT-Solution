@@ -14,7 +14,7 @@ const DealsOfDay = () => {
         <div>See more items</div>
       </div>
       <div id="card-container" className="grid md:grid-cols-2 gap-4 py-4">
-        <div className="flex flex-row justify-between gap-4 bg-white p-4">
+        <div className="flex md:flex-row flex-col justify-between gap-4 bg-white p-4">
           <div className="w-full flex justify-center">
             <img className="w-full" src={deals1} alt="" />
           </div>
@@ -66,7 +66,7 @@ const DealsOfDay = () => {
           </div>
         </div>
         {/*  */}
-        <div className="flex flex-row justify-between gap-4 bg-white p-4">
+        <div className="flex md:flex-row flex-col justify-between gap-4 bg-white p-4">
           <div className="w-full flex justify-center">
             <img className="w-full" src={deals2} alt="" />
           </div>
