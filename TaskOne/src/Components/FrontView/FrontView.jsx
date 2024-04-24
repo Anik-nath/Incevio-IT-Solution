@@ -1,4 +1,4 @@
-// import staricon from "../../assets/frontview/Frame 40.png";
+import staricon from "../../assets/frontview/Frame 40.png";
 import award from "../../assets/frontview/award.png";
 import banner from "../../assets/frontview/Frame 27046.png";
 import offer from "../../assets/frontview/Frame 68.png";
@@ -103,19 +103,19 @@ const FrontView = () => {
             <div key={item.name} className="grid md:grid-cols-1 gap-2 mb-3">
               <div className="flex flex-row gap-2">
                 <img src={item.image} alt="" />
-                <p>{item.name}</p>
+                <p >{item.name}</p>
               </div>
             </div>
           ))}
         </div>
         <div className="md:col-span-2 flex flex-col gap-4">
           <div className="relative">
-            <img src={banner} alt="banner" />
+            <img style={{height:'50vh'}} className="w-full" src={banner} alt="banner" />
             <div className="absolute bottom-14 md:w-4/12 h-auto p-6">
               <h1 className="md:text-5xl pb-4 font-bold text-primary-194E8A">
                 Kitchen Savings.
               </h1>
-              <button className="bg-primary-194E8A text-white px-4 py-2">
+              <button className="bg-primary-194E8A text-white px-2 py-2">
                 Buy Now (5% off)
               </button>
             </div>
@@ -220,7 +220,7 @@ const FrontView = () => {
           </div>
         </div>
       </div>
-      {/* <div className="grid md:grid-cols-4 grid-cols-2 gap-4">
+      <div className="grid md:grid-cols-4 grid-cols-2 gap-4">
         <div className="bg-neutral-50 p-4 flex flex-row items-center gap-2">
           <div>
             <img src={staricon} alt="" />
@@ -257,7 +257,7 @@ const FrontView = () => {
             <p>Discover whats new & excitings</p>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
