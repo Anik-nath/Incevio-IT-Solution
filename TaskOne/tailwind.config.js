@@ -69,7 +69,7 @@ export default {
         'medium': 540,
       },
       padding: {
-        'side-padding': '100px',
+        'side-padding': '90px',
         'padding-56': '56px',
       },
     },

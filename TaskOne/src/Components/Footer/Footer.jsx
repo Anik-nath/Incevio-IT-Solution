@@ -14,8 +14,8 @@ const Footer = () => {
   return (
     <>
       <div className="md:px-side-padding px-12 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-full">
-        <div className="grid md:grid-cols-4 grid-cols-1 gap-4 md:gap-44">
-          <div className="w-full">
+        <div className="grid md:grid-cols-4 grid-cols-1 gap-4 md:gap-40">
+          <div className="w-full ">
             <a
               href="/"
               aria-label="Go home"
@@ -37,10 +37,10 @@ const Footer = () => {
           </div>
           <div className="w-full grid md:grid-cols-3 grid-cols-3 md:col-span-2 mt-4 md:mt-0">
             <div>
-              <p className="font-semibold md:text-h5  tracking-wide text-gray-800">
+              <p className="font-bold md:text-h6 text-sm tracking-wide text-gray-800">
                 Company
               </p>
-              <ul className="mt-2 space-y-2">
+              <ul className="mt-2 space-y-2 text-sm md:text-md">
                 <li>
                   <a
                     href="/"
@@ -84,10 +84,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <p className="font-semibold  md:text-h5 tracking-wide text-gray-800">
+              <p className="font-bold text-sm md:text-h6 tracking-wide text-gray-800">
                 My Account
               </p>
-              <ul className="mt-2 space-y-2">
+              <ul className="mt-2 space-y-2 text-sm md:text-md">
                 <li>
                   <a
                     href="/"
@@ -131,10 +131,10 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <p className="font-semibold  md:text-h5 tracking-wide text-gray-800">
+              <p className="font-bold text-sm md:text-h6 tracking-wide text-gray-800">
                 Customer Service
               </p>
-              <ul className="mt-2 space-y-2">
+              <ul className="mt-2 space-y-2 text-sm md:text-md">
                 <li>
                   <a
                     href="/"
@@ -179,12 +179,12 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-full flex flex-col md:justify-start md:items-end">
-            <p className="font-semibold text-h5 pb-4 text-gray-800  w-full mr-4">
+            <p className="font-bold md:text-h6 text-sm pb-4 text-gray-800  w-full mr-4">
               Download app
             </p>
-            <div className="flex flex-row gap-2 w-full justify-end">
-              <img className="w-1/2 md:w-full" src={googleplay} alt="googleplay" />
-              <img className="w-1/2 md:w-full" src={applystore} alt="applystore" />
+            <div className="flex flex-row gap-2 w-full md:justify-end">
+              <img className="md:w-3/4" src={googleplay} alt="googleplay" />
+              <img className="md:w-3/4" src={applystore} alt="applystore" />
             </div>
           </div>
         </div>
@@ -231,7 +231,7 @@ const Footer = () => {
             All Rights Reserved. © 2024 zcart.com
           </p>
           <div className="flex md:flex-row items-center mt-4 md:space-x-6 space-x-2 sm:mt-0">
-            <p className="w-full">We are using for</p>
+            <p className="w-full md:text-md text-sm text-gray-600">We are using for</p>
             <div>
               <img className="md:w-24 w-20" src={payment} alt="" />
             </div>

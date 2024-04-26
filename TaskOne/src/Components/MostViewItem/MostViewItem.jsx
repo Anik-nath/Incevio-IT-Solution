@@ -113,7 +113,9 @@ const MostViewItem = () => {
     <div className="md:px-side-padding px-12 pb-6">
       <div className="flex flex-row justify-between">
         <h4 className="text-h4 font-medium">Most Viewed Items</h4>
-        <div>See more items</div>
+        <div>
+          <a className="" href="#">See more items</a>
+        </div>
       </div>
       <div className="py-4">
         <Slider {...settings}>

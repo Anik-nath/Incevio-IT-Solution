@@ -11,7 +11,9 @@ const DealsOfDay = () => {
     <div className="md:px-side-padding px-12 pb-6">
       <div className="flex flex-row justify-between">
         <h4 className="text-h4 font-medium capitalize">Deals Of Day</h4>
-        <div>See more items</div>
+        <div>
+          <a className="" href="#">See more items</a>
+        </div>
       </div>
       <div id="card-container" className="grid md:grid-cols-2 gap-4 py-4">
         <div className="flex md:flex-row flex-col justify-between gap-4 bg-white p-4">
